@@ -1,0 +1,9 @@
+#!/bin/bash
+# Run this from the ~/
+
+ln -s ~/configs/.vimrc .vimrc
+ln -s ~/configs/.bashrc .bashrc
+ln -s ~/configs/.bash_aliases .bash_aliases
+ln -s ~/configs/.vim/ .vim
+ln -s ~/configs/.tmux.conf .tmux.conf
+ln -s ~/configs/.gitconfig
