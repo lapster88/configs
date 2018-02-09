@@ -5,7 +5,7 @@ set nocompatible
 filetype off
 
 " Nerdtree
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 let NERDTreeShowHidden=1
 nnoremap <Leader>f : NERDTreeToggle <CR>
 
