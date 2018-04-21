@@ -115,3 +115,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
+export display=localhost:0.0
