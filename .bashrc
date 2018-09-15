@@ -118,4 +118,4 @@ fi
 
 export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
 export PATH="$PATH:/mnt/c/Program Files/Oracle/VirtualBox"
-export display=localhost:0.0
+export DISPLAY=:0
