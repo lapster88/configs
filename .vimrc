@@ -18,6 +18,7 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'rdnetto/YCM-Generator',{'branch': 'stable'},
 Plug 'vim-airline/vim-airline',
 Plug 'vim-airline/vim-airline-themes'
+Plug 'lervag/vimtex'
 call plug#end()
 
 
