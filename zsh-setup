@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Install Zsh and dependencies
+sudo apt update
+sudo apt install -y zsh git curl
+
+# Download Oh My Zsh installation script
+curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -o install.sh
+
+# Run the Oh My Zsh installer
+sh install.sh --unattended
+
+# Clean up the installation script
+rm install.sh
+
+# Install Powerlevel10k theme
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
+
+# Install recommended font for Powerlevel10k
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts
+curl -fsSL -O https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+curl -fsSL -O https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
+curl -fsSL -O https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
+curl -fsSL -O https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+
+# Refresh the font cache
+fc-cache -fv
+
+# Install Oh My Zsh plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
