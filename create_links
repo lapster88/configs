@@ -7,3 +7,4 @@ ln -s ~/configs/.bash_aliases .bash_aliases
 ln -s ~/configs/.vim/ .vim
 ln -s ~/configs/.tmux.conf .tmux.conf
 ln -s ~/configs/.gitconfig
+ln -s ~/configs/.zshrc .zshrc

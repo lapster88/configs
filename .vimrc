@@ -50,7 +50,7 @@ set encoding=utf-8
 
 " Whitespace
 set wrap
-set textwidth=79
+"set textwidth=79
 set formatoptions=tcqrn1
 set tabstop=2
 set shiftwidth=2
@@ -150,3 +150,4 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
+let g:vimtex_view_method = 'zathura'
